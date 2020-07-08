@@ -1,0 +1,10 @@
+ROBOT:
+  controller:
+    state:
+      type: joint_state_controller/JointStateController
+      publish_rate: 1
+    position:
+      YOUR_ROBOT_JOINT:
+        type: position_controllers/JointPositionController
+        joint: YOUR_ROBOT_JOINT
+        pid: {p: 10.0, i: 0.0, d: 1.0}
